@@ -17,4 +17,11 @@ describe("ChannelCard component", () => {
     const imgElement = getByRole("img");
     expect(imgElement).toHaveAttribute("src", image);
   });
+
+  it("Should match the snapshot", () => {
+    const { asFragment } = render(
+      <ChannelCard number={123} image="test-image.jpg" />
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
 });

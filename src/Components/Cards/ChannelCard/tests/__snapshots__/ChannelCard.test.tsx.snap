@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChannelCard component Should match the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-beySPh bCfLgt"
+  >
+    <div
+      class="channel-number"
+    >
+      <p>
+        123
+      </p>
+    </div>
+    <div
+      class="image-container"
+    >
+      <img
+        src="test-image.jpg"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
