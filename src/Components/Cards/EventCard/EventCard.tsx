@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import styled from "styled-components";
 import { AiOutlineDash } from "react-icons/ai";
 
 import { StyledEventCard } from "./StyledComponents";
@@ -11,7 +10,7 @@ import {
   description,
 } from "../../../Redux/slices/Epg/tvShowInfoSlice";
 import { EventCardProps } from "./types";
-import { RootState, AppDispatch } from "../../../Redux/store";
+import { AppDispatch } from "../../../Redux/store";
 
 const EventCard = ({ event }: EventCardProps) => {
   const dispatch: AppDispatch = useDispatch();
