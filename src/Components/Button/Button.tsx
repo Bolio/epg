@@ -5,11 +5,11 @@ interface IProps {
   children: React.ReactNode;
   type?: "button" | "submit" | "reset";
   handleClick: MouseEventHandler<HTMLButtonElement>;
-  backgroundColor?: string;
+  backgroundcolor?: string;
 }
 
-const StyledButton = styled.button<{ backgroundColor?: string }>`
-  background-color: ${({ backgroundColor }) => backgroundColor};
+const StyledButton = styled.button<{ backgroundcolor?: string }>`
+  background-color: ${({ backgroundcolor }) => backgroundcolor};
   color: white;
   padding: 10px 20px;
   border: none;
@@ -18,9 +18,9 @@ const StyledButton = styled.button<{ backgroundColor?: string }>`
   font-size: 16px;
 `;
 
-const Button = ({ children, handleClick, backgroundColor }: IProps) => {
+const Button = ({ children, handleClick, backgroundcolor }: IProps) => {
   return (
-    <StyledButton onClick={handleClick} backgroundColor={backgroundColor}>
+    <StyledButton onClick={handleClick} backgroundcolor={backgroundcolor}>
       {children}
     </StyledButton>
   );
