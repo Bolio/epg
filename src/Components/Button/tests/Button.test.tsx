@@ -35,4 +35,13 @@ describe("Button component", () => {
     const buttonElement = getByText(text);
     expect(buttonElement).toHaveStyle(`background-color: ${backgroundcolor}`);
   });
+
+  it("Should match the snapshot", () => {
+    const { asFragment } = render(
+      <Button handleClick={() => {}} backgroundcolor="blue">
+        Click me
+      </Button>
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
