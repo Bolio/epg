@@ -20,7 +20,7 @@ const TVShowInfo = ({ handleToggleModal }: IProps) => {
       <div>
         <Button
           type="button"
-          backgroundColor="transparent"
+          backgroundcolor="transparent"
           handleClick={handleToggleModal}
         >
           <AiOutlineClose />

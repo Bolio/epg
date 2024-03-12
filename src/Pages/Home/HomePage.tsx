@@ -22,7 +22,7 @@ const HomePage = () => {
     <StyledHome>
       <Button
         type="button"
-        backgroundColor="#007bff"
+        backgroundcolor="#007bff"
         handleClick={handleToggleModal}
       >
         Mostrar EPG
